@@ -67,7 +67,7 @@ img {
 main .swiper-container .swiper-pagination-bullet {
   width: 12vw;
   margin-inline: 2vw !important;
-  height: 3px;
+  height: 2px;
   border-radius: 0;
   position: relative;
   overflow: hidden;
