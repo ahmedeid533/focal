@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Swiper Project</title>
+  
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
+</head>
+<body class="text-white">
+	<header class="p-8 flex justify-between fixed items-center">
+		<div class="flex lg:hidden items-center space-x-4 w-1/4 ">
+			<svg class="h-8 w-8" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+				<path d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+			<!-- svg magnifier -->
+			<svg class="h-7 w-7" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+				<circle cx="11" cy="11" r="8"></circle>
+				<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+			</svg>
+		</div>
+		<div class="flex items-center">
+			<img src="./assets/images/logo-focal.avif" alt="Focal Logo" class="h-6">
+		</div>
+		<div class="flex items-center justify-end space-x-6 w-1/4 lg:w-fit">
+			<nav class="lg:flex hidden space-x-10">
+				<a href="#" class="hover:underline">Shop by Category</a>
+				<a href="#" class="hover:underline">Shop by Device</a>
+				<a href="#" class="hover:underline">Collections</a>
+				<a href="#" class="hover:underline">Blog</a>
+				<div class="items-center lg:flex hidden space-x-4 ">
+					<select class="bg-transparent border border-gray-700 text-white">
+						<option class="text-black">United States (USD $)</option>
+						<option class="text-black">Egyption Pound (EGP $)</option>
+					</select>
+				</div>
+			</nav>
+			<svg focusable="false" width="27" height="22" class="icon icon--header-email hidden lg:block  " viewBox="0 0 20 16">
+				<path d="M19 4l-9 5-9-5" fill="none" stroke="currentColor" stroke-width="2"></path>
+				<path stroke="currentColor" fill="none" stroke-width="2" d="M1 1h18v14H1z"></path>
+			  </svg>
+			<svg focusable="false" width="25" height="25" class="icon icon--header-search hidden lg:block " viewBox="0 0 18 18">
+				<path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
+			  </svg>
+			<svg focusable="false" width="25" height="22.5" class="icon icon--header-customer hidden lg:block  " viewBox="0 0 18 17">
+				<circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
+				<path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
+			  </svg>
+			<svg focusable="false" width="25" height="22.5" class="icon icon--header-cart   " viewbox="0 0 20 18">
+				<path d="M3 1h14l1 16H2L3 1z" fill="none" stroke="currentColor" stroke-width="2"></path>
+				<path d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0" fill="none" stroke="currentColor" stroke-width="2"></path>
+			</svg>
+			<div class="rounded-full flex justify-center items-center absolute top-7 right-6 bg-white w-5 h-5">
+				<span class="text-black text-xs">0</span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="swiper-container relative w-screen h-screen overflow-hidden" >
+			<div class="swiper-wrapper">
+				<div class="swiper-slide flex flex-row items-end justify-center bg-black ">
+					<div class="flex w-full h-full">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=600" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=3000" sizes="100vw" alt="Jump Collection" class="flex w-full h-full object-cover object-top">
+					</div>
+					<div class="absolute top-1/2 left-1/2 w-4/5 transform -translate-x-1/2 -translate-y-1/2">
+						<div class="w-full flex flex-col justify-items-start">
+							<div class="text-sm mb-4">
+								REACT.JS APPLICATION
+							</div>
+							<div>
+								<h1 class="text-4xl font-bold mb-2 text-left">MEN'S WEAR STORE</h1>
+							</div>
+							<a href="https://teststore.armany1of1.com/" class="bg-yellow-400 w-fit px-6 py-3">ARMANY</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide flex flex-row items-center justify-center bg-black ">
+					<div class="flex w-full h-full">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=3000" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=1200 1200w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=1800 1800w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=2400 2400w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=3000 3000w" sizes="100vw" alt="Jump Collection" class="flex w-full lg:w-1/2 h-full object-cover object-center">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=300" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=1200 1200w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=1800 1800w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=2400 2400w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=3000 3000w" sizes="100vw" alt="Jump Collection" class="hidden lg:flex w-1/2 h-full object-cover object-center">
+					</div>
+					<div class="absolute top-1/2 left-1/2 w-4/5 transform -translate-x-1/2 -translate-y-1/2">
+						<div class="text-sm mb-4 text-center">
+							LARAVEL APPLICATION
+						</div>
+						<h1 class="text-4xl font-bold mb-2 text-center	">AHMED EID</h1>
+						<h1 class="text-4xl font-bold mb-4 text-center	">A DEVELOPER</h1>
+						<div class="w-full flex justify-items-center">
+							<a href="https://apextvs.com/" class="bg-yellow-400 inline-flex m-auto px-6 py-3">APEX TV</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide flex flex-row items-end justify-center bg-black ">
+					<div class="flex w-full h-full">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&width=600" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&width=3000 3000w" sizes="100vw" alt="Jump Collection" class="flex w-full h-full object-cover object-top">
+					</div>
+					<div class="absolute top-1/2 left-1/2 w-4/5 transform -translate-x-1/2 -translate-y-1/2">
+						<div class="w-full flex flex-col justify-items-start">
+							<div class="text-sm mb-4">
+								WORDPRESS APPLICATION
+							</div>
+							<div>
+								<h1 class="text-4xl font-bold mb-2 text-left">NDITP</h1>
+								<h1 class="text-4xl font-bold mb-2 text-left">GRADUATION PROJECT</h1>
+							</div>
+							<a href="https://test-ndiftp.pantheonsite.io/" class="bg-yellow-400 w-fit  px-6 py-3">NDITP</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide flex flex-row items-end justify-center bg-black ">
+					<div class="flex w-full h-full">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=600" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=3000" sizes="100vw" alt="Jump Collection" class="flex w-full h-full object-cover object-top">
+					</div>
+					<div class="absolute top-1/2 left-1/2 w-4/5 transform -translate-x-1/2 -translate-y-1/2">
+						<div class="w-full flex flex-col justify-items-start">
+							<div class="text-sm mb-4">
+								REACT.JS APPLICATION
+							</div>
+							<div>
+								<h1 class="text-4xl font-bold mb-2 text-left">MEN'S WEAR STORE</h1>
+							</div>
+							<a href="https://teststore.armany1of1.com/" class="bg-yellow-400 w-fit px-6 py-3">ARMANY</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide flex flex-row items-center justify-center bg-black ">
+					<div class="flex w-full h-full">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=3000" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=1200 1200w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=1800 1800w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=2400 2400w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump-mobile.jpg?v=1630492975&width=3000 3000w" sizes="100vw" alt="Jump Collection" class="flex w-full lg:w-1/2 h-full object-cover object-center">
+						<img src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=300" srcset="https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=600 600w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=1200 1200w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=1800 1800w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=2400 2400w, https://focal-theme-carbon.myshopify.com/cdn/shop/files/jump2-desktop.jpg?v=1630492956&width=3000 3000w" sizes="100vw" alt="Jump Collection" class="hidden lg:flex w-1/2 h-full object-cover object-center">
+					</div>
+					<div class="absolute top-1/2 left-1/2 w-4/5 transform -translate-x-1/2 -translate-y-1/2">
+						<div class="text-sm mb-4 text-center">
+							LARAVEL APPLICATION
+						</div>
+						<h1 class="text-4xl font-bold mb-2 text-center	">AHMED EID</h1>
+						<h1 class="text-4xl font-bold mb-4 text-center	">A DEVELOPER</h1>
+						<div class="w-full flex justify-items-center">
+							<a href="https://apextvs.com/" class="bg-yellow-400 inline-flex m-auto px-6 py-3">APEX TV</a>
+						</div>
+					</div>
+				</div>
+				<!-- Add more slides as needed -->
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination" id="custom"></div>
+		</div>
+	</main>
+
+  <script type="module" src="../src/main.js"></script>
+  <script src="./assets/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

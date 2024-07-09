@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: 0;
+}
+
+@font-face {
+  font-family: "Zurich Extended";
+  src: url("./fonts/zurich-black-extended-bt_Yel7p/Zurich_Black_Extended_BT.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Zurich";
+  src: url("./fonts/zurich-extended-bt_0CSfJ/Zurich_Extended_BT.ttf") format("truetype");
+  font-weight: 400;
+}
+body {
+  overflow: hidden;
+  font-family: "Zurich Extended";
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Zurich";
+  background-color: rgb(40, 40, 40);
+}
+header nav {
+  display: none;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+main .swiper-container .swiper-wrapper {
+  height: 100vh;
+}
+main .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Zurich Extended";
+}
+
+header nav {
+  display: flex;
+}
+
+#custom {
+  bottom: 10vh;
+}
+
+img {
+  filter: brightness(0.85);
+}
+
+main .swiper-container .swiper-pagination-bullet {
+  width: 12vw;
+  margin-inline: 2vw !important;
+  height: 3px;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #888;
+}
+@media (min-width: 768px) {
+  main .swiper-container .swiper-pagination-bullet {
+    width: 4vw;
+    margin-inline: 0.7vw !important;
+  }
+}
+main .swiper-container .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+main .swiper-container .swiper-pagination-bullet-active {
+  background: #aaa;
+}
+main .swiper-container .swiper-pagination-bullet-active::before {
+  background-color: white;
+  animation: slide-progress 5s linear forwards;
+}
+.swiper-paused main .swiper-container .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+@keyframes slide-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=style.css.map */
